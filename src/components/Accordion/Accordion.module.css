@@ -1,0 +1,90 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 1px solid #a2abbd;
+}
+
+.container:last-of-type {
+  border-bottom: none;
+}
+
+/* CONTENT  */
+
+.content {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.6s ease;
+  margin: 0;
+}
+
+.content.active {
+  max-height: 215px;
+}
+
+/* IMAGE CONTAINER  */
+
+.imageContainer {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2f2f3a;
+  padding: 16px 16px 8px;
+  order: 1;
+  width: 100%;
+  margin: auto;
+  margin: 0;
+}
+
+.imageContainerCenter {
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ecaa5b;
+  font-size: 32px;
+}
+
+.spotifyImage {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 1px solid #a2abbd;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  cursor: pointer;
+  z-index: 3;
+}
+
+/* STATION DETAISL  */
+
+.stationDetails {
+  max-width: 280px;
+  display: flex;
+  padding: 0 16px;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  border-bottom: 1px solid #a2abbd;
+  min-height: 64px;
+  max-height: 64px;
+}
+
+.stationDetails:last-child {
+  border-bottom: none;
+}
+
+.stationDetails:hover {
+  color: #fff;
+}
